@@ -3,7 +3,9 @@
 html, body {
   height: 100%;
 }
-
+.middle{
+  flex-shrink: 6;
+}
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -14,12 +16,29 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 18px;
+  
+}
+.header {
+    font-weight: 1000;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.middle .text {
+  margin-bottom: 15px;
+  text-align: left;
+}
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 18px;
+ 
 }
 
 .icon {
@@ -33,21 +52,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .close-button {
   background: #eee;
   border-radius: 50%;
   color: #888;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: bolder;
+  font-size: 14px;
   height: 24px;
   width: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #eee;
-  padding: 0;
+  padding: 4px;
+  flex-shrink: 0;
 }
 
 button {
